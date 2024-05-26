@@ -10,10 +10,10 @@ import java.util.List;
 public class Score {
 
     @Id
-    private String id;
-    private String quizId;
+    private Long id;
+    private Long quizId;
     private List<Object> answers;
-    private String userId;
+    private Long userId;
     private Date createdAt;
     private boolean deleted;
 
@@ -23,7 +23,7 @@ public class Score {
     }
 
 
-    public Score(String quizId, List<Object> answers, String userId) {
+    public Score(Long quizId, List<Object> answers, Long userId) {
         this.quizId = quizId;
         this.answers = answers;
         this.userId = userId;
@@ -31,19 +31,19 @@ public class Score {
         this.deleted = false;
     }
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public String getQuizId() {
+    public Long getQuizId() {
         return quizId;
     }
 
-    public void setQuizId(String quizId) {
+    public void setQuizId(Long quizId) {
         this.quizId = quizId;
     }
 
@@ -55,11 +55,11 @@ public class Score {
         this.answers = answers;
     }
 
-    public String getUserId() {
+    public Long getUserId() {
         return userId;
     }
 
-    public void setUserId(String userId) {
+    public void setUserId(Long userId) {
         this.userId = userId;
     }
 

@@ -9,7 +9,7 @@ import java.util.List;
 public class Quiz {
 
     @Id
-    private String id;
+    private Long id;
     private String title;
     private List<Object> questions;
     private String createdBy;
@@ -38,11 +38,11 @@ public class Quiz {
         this.category = category;
     }
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
